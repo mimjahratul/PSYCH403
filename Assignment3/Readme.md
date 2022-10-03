@@ -10,7 +10,7 @@ subnr_str = '2'
 
 print(sub_code + subnr_str)
 ```
-Adding subnr_str to sub_code will produce the output 'sub2' because they are both string types and subnr_int is an int typestring and int can not be added
+Adding subnr_str to sub_code will produce the output 'sub2' because they are both string types and subnr_int is an int type. String and int can not be added
 
 2. Operations to create the outputs: 
 ```
