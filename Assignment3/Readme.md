@@ -1,4 +1,6 @@
-Variable Operations:
+# Level 1 Exercises
+
+## Variable Operations:
 
 1.
 ```
@@ -18,30 +20,29 @@ print((sub_code + subnr_str) *3)
 print((sub_code)*3 + subnr_str*3)
 ```
 
-
- #1
+## List Operations
+1. 
+```
 numlist = [1,2,3]
 print(numlist*2)
-#[1, 2, 3, 1, 2, 3]
-
-
-#2
+```
+2. When you multiply a list by an integer, it prints the values by the multiple (e.g. twice in this case). Whereas for arrays, it prints the multiplication of the numbers in the array by the multiple
+```
 import numpy as np
 numarr = np.array([1,2,3])
 print(numarr*2)
-#[2 4 6]
-#When you multiply a list by an integer, it prints the values by the multiple (e.g. twice in this case)
-#whereas for arrays, it prints the multiplication of the numbers in the array by the multiple
-
-#3
+```
+3. 
+```
 strlist = ['do','re','mi','fa']
 print([strlist[0]*2,strlist[1]*2,strlist[2]*2,strlist[3]*2])
 print(strlist*2)
 print([strlist[0],strlist[0],strlist[1],strlist[1],strlist[2],strlist[2],strlist[3],strlist[3]])
 print([[strlist[0],strlist[0]],[strlist[1],strlist[1]],[strlist[2],strlist[2]],[strlist[3],strlist[3]]])
+```
 
-
-#Zipping
+## Zipping 
+```
 import numpy as np
 
 img1 = []
@@ -67,8 +68,10 @@ img2.extend(face1)
 ziplist = list(zip(img1,img2,cues))
 np.random.shuffle(ziplist)
 print(ziplist)
+```
 
-Indexing
+## Indexing
+```
 colors = ['red', 'orange', 'yellow', 'green', 'blue', 'purple']
 print(colors[4])
 print(colors[4][2],colors[4][3])
@@ -76,8 +79,10 @@ colors.remove('purple')
 colors.append('indigo')
 colors.append('violet')
 print(colors)
+```
 
-SLicing
+## Slicing
+```
 list100 = list(range(0,101))
 print(list100)
 print(list100[:10])
@@ -85,3 +90,5 @@ print(list100[1:101:2][::-1])
 print(list100[97:101][::-1])
 
 print(list100[39:44] == list(range(39,44))) 
+```
+5. Yes the 40th-44th numbers in the list are equal to integers 39-43. 
