@@ -31,5 +31,38 @@ else:
 
 # For loop exercises
 
+1. 
+```
+first_name = "Jahratul"
+for letter in first_name:
+    print(letter)
+```
+2. 
+```first_name = "Jahratul"
+count = -1
+for letter in first_name:
+    count +=1
+    print(letter)
+    print("This letter has an index of %i" %count)
+```
+3. 
+```
+names = ["Amy","Rory","River"]
+
+for name in names:
+    for letter in name: 
+        print(letter)
+```
+4. 
+```
+names = ["Amy","Rory","River"]
+for name in names:
+    count = -1
+    for letter in name: 
+        count += 1 
+        print(letter)
+        print("This letter has an index of %s" %count)
+```
+
 # While loop exercises
 
