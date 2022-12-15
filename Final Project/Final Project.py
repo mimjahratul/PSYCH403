@@ -74,7 +74,7 @@ for trial in range(nTrials): # start experiment
 #SAVE DATA TO A CSV FILE
 with open('memory_data.csv', 'w') as csvfile:
     writer = csv.writer(csvfile, delimiter=',') # specify the delimiter as a comma
-    writer.writerow(["ID", "Age", "Gender", "Response", "Reaction Time"])
+    writer.writerow(["ID", "Age", "Gender", "Response"])
     writer.writerows(data)
     
 #SAVE REACTION TIMES TO A CSV FILE
